@@ -11,6 +11,15 @@ import CarComponent from './CarComponent.jsx'
 import InlineCSS from './InlineCSS.jsx'
 import ExternalCSS from './ExternalCSS.jsx'
 import CSSModule from './CSSModule.jsx'
+import TailwindExample from './TailwindExample.jsx'
+import EventHandling from './EventHandling.jsx'
+import EventHandling1 from './EventHandling1.jsx'
+import StateClassComp from './StateClassComp.jsx'
+import UseStateExample from './UseStateExample.jsx'
+import UseEffectExample from './UseEffectExample.jsx'
+import WithoutUseContext from './UseContext/WithoutUseContext.jsx'
+import ProviderComponent from './UseContext/ProviderComponent.jsx'
+import ModeProvider from './UseContext/ModeProvider.jsx'
 
 function Laptop(){
 
@@ -59,20 +68,8 @@ const config = {
 const versions = [1,2,3];
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <App />
-    <DashboardClassComponent />
-    <Practice /> */}
-    {/* <JSXBasics />
-    <Box /> */}
-    {/* <University /> */}
-    {/* <Practice1/> */}
-    {/* <DashboardClassComponent /> */}
-    {/* <LaptopComponent brand = "HP" color= "Grey" year = {2024} con = {config} ver = {versions}/> */}
-    {/* <LaptopComponent brand = "Dell" color ="silver"/> */}
-    {/* <CarComponent model = "M1" color="White"/> */}
-    <InlineCSS />
-    <ExternalCSS />
-    <CSSModule />
-  </StrictMode>,
+  
+    
+<ModeProvider />
+
 )
