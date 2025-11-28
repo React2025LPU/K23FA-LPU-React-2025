@@ -24,6 +24,12 @@ import ParentComp from './UseCallback/ParentComp.jsx'
 import ParentTheme from './UseCallback/ParentTheme.jsx'
 import UseMemoExample from './UseMemo/UseMemoExample.jsx'
 import UseReducerExample1 from './UseReducer/UseReducerExample1.jsx'
+import UseReducerExample2 from './UseReducer/UseReducerExample2.jsx'
+import UseRefExample1 from './UseRef/UseRefExample1.jsx'
+import UseRefExample2 from './UseRef/UseRefExample2.jsx'
+import ToggleState from './CustomHook/ToggleState.jsx'
+import ControlledComponent from './FormHandling/ControlledComponent.jsx'
+import ControlledComponent1 from './FormHandling/ControlledComponent1.jsx'
 
 function Laptop(){
 
@@ -73,7 +79,6 @@ const versions = [1,2,3];
 
 createRoot(document.getElementById('root')).render(
   
-    
-<UseReducerExample1 />
+<ControlledComponent1 />
 
 )

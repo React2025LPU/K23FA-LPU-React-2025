@@ -18,10 +18,7 @@ const UseReducerExample1 = () => {
             default:
                 return state;
         }
-
-
     }
-
     const [count , dispatchCountState] = useReducer(reducerCount, initialCountstate)
   return (
     <div>
