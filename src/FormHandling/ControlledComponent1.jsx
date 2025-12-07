@@ -11,8 +11,9 @@ const ControlledComponent1 = () => {
     const [myData, setmyData] = useState({
         fname:"",
         lname : "",
-        review : ""
-    }) 
+        review : "",
+        subject:"react"
+    })
 
     const changeData = (e) =>{
         const {name,value} = e.target;
@@ -34,7 +35,7 @@ const ControlledComponent1 = () => {
     // }
 
     const submitForm = (e) =>{
-        alert(`${myData.fname} ${myData.lname}`)
+        alert(`${myData.fname} ${myData.lname} value selected ${myData.subject}`)
         e.preventDefault();
     }
   return (
@@ -49,12 +50,17 @@ const ControlledComponent1 = () => {
 
             Review : <textarea value={myData.review} 
             onChange={changeData} name='review'></textarea> <br/>
-
+            <select value={myData.subject} name="value" onChange={changeData}>
+                <option value="react">react</option>
+                <option value="node">node</option>
+                <option value="sql">sql</option>
+            </select>
             <button type='submit'>Submit Form</button>
 
             <h2>First name : {myData.fname}</h2>
             <h2>Last name : {myData.lname}</h2>
             <h2>Review : {myData.review}</h2>
+            <h2>Review : {myData.subject}</h2>
         </form>
       
     </div>

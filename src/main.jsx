@@ -30,6 +30,9 @@ import UseRefExample2 from './UseRef/UseRefExample2.jsx'
 import ToggleState from './CustomHook/ToggleState.jsx'
 import ControlledComponent from './FormHandling/ControlledComponent.jsx'
 import ControlledComponent1 from './FormHandling/ControlledComponent1.jsx'
+import UncontrolledComponent from './FormHandling/UncontrolledComponent.jsx'
+import FormValidation from './FormHandling/FormValidation.jsx'
+import HTTPFetchMethod from './HTTPMethod/HTTPFetchMethod.jsx'
 
 function Laptop(){
 
@@ -78,7 +81,7 @@ const config = {
 const versions = [1,2,3];
 
 createRoot(document.getElementById('root')).render(
-  
-<ControlledComponent1 />
+
+<HTTPFetchMethod />
 
 )
