@@ -53,13 +53,10 @@ const [errMessage, seterrMessage] = useState("");
         console.log(data.users);
         setusers(data.users);
     })
-
-
 }
 
 
 const postData = () =>{
-
     const newData = {
         userId : 300,
         title:"react"

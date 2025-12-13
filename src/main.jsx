@@ -33,6 +33,9 @@ import ControlledComponent1 from './FormHandling/ControlledComponent1.jsx'
 import UncontrolledComponent from './FormHandling/UncontrolledComponent.jsx'
 import FormValidation from './FormHandling/FormValidation.jsx'
 import HTTPFetchMethod from './HTTPMethod/HTTPFetchMethod.jsx'
+import HTTPAxiosMethod from './HTTPMethod/HTTPAxiosMethod.jsx'
+import ParentRouting from './Routing/ParentRouting.jsx'
+import ParentRouting2 from './RoutingExample1.jsx/ParentRouting2.jsx'
 
 function Laptop(){
 
@@ -82,6 +85,6 @@ const versions = [1,2,3];
 
 createRoot(document.getElementById('root')).render(
 
-<HTTPFetchMethod />
+<ParentRouting2 />
 
 )
