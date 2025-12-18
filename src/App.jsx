@@ -3,6 +3,9 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
+import ReduxUI from "./ReduxExample/ReduxUI"
+import TodoUI from "./ReduxTodoExample/TodoUI"
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -49,11 +52,9 @@
 export const App = () =>
 {
   return(
-
     <div>
-        <h3>This is my first App using arrow function</h3>
+        <TodoUI/>
      </div>
-
   )
 }
 

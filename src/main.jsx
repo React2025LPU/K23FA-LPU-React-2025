@@ -36,6 +36,8 @@ import HTTPFetchMethod from './HTTPMethod/HTTPFetchMethod.jsx'
 import HTTPAxiosMethod from './HTTPMethod/HTTPAxiosMethod.jsx'
 import ParentRouting from './Routing/ParentRouting.jsx'
 import ParentRouting2 from './RoutingExample1.jsx/ParentRouting2.jsx'
+import { Provider } from 'react-redux'
+import {store1} from './store1.jsx'
 
 function Laptop(){
 
@@ -85,6 +87,8 @@ const versions = [1,2,3];
 
 createRoot(document.getElementById('root')).render(
 
-<ParentRouting2 />
+<Provider store={store1}>
+  <App />
+</Provider>
 
 )
