@@ -1,7 +1,7 @@
 
 
 import React, { useCallback, useState } from 'react'
-import ChildComp from './Childcomp';
+import ChildComp from './ChildComp';
 
 const ParentComp = () => {
 
